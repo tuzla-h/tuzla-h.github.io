@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css?family=Cairo&display=swap");
+
+* {
+  direction: rtl;
+  font-family: Cairo;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow-x: hidden !important;
+}
+
+/* Top Navbar */
+.top-navbar {
+  background-color: #3d2013 !important;
+  font-size: 13.2px;
+  font-weight: bold;
+}
+
+.top-navbar .nav-item,
+.fa {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.top-navbar .nav-item .nav-link {
+  color: white;
+}
+
+.top-navbar .nav-link.active {
+  color: green !important;
+}
+
+.phone-no {
+  direction: ltr;
+}
+/* Top Navbar */
+
+/* Header Navbar */
+.header-navbar {
+  color: white !important;
+  height: 95px;
+}
+
+.header .bg-light {
+  background: #f8f9fab8 !important;
+}
+
+.header-navbar .nav-links {
+  margin: auto;
+}
+
+.header-navbar .nav-links ul li {
+  padding-left: 10px;
+}
+
+.header-navbar .nav-item .nav-link {
+  color: black;
+}
+.btn-outline-secondary {
+  color: #3d2013;
+  border-color: #3d2013;
+}
+
+/* Header Navbar */
+
+/* Header Banner */
+.header {
+  height: 715px;
+  background-image: url("./Group8576.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.07);
+}
+
+.description {
+  position: absolute;
+  top: 39%;
+  text-align: right;
+  right: 12%;
+}
+
+.description h2 {
+  font-size: 40px;
+  color: #fff;
+}
+
+.know-more {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-radius: 0px;
+  background: #017730;
+  border-color: #017730;
+  height: 55px;
+  font-size: 18px;
+}
+
+.buy-ribbon {
+  background: #3d2013;
+  height: 57px;
+  width: 30%;
+  position: absolute;
+  top: 92%;
+}
+
+.buy-ribbon h5 {
+  color: white;
+  text-align: left;
+  position: relative;
+  top: 20%;
+  left: 10%;
+  font-weight: bold;
+}
+/* Header Banner */
+
+/* Marquee */
+.marquee {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background: #017730;
+}
+.marquee h5 {
+  font-size: 1.2em;
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  /* Apply animation to this element */
+  -moz-animation: example1 15s linear infinite;
+  -webkit-animation: example1 15s linear infinite;
+  animation: example1 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes example1 {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes example1 {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+@keyframes example1 {
+  0% {
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%);
+  }
+}
+/* Marquee */
+
+/* About */
+.about {
+  margin-top: 6%;
+}
+
+.about .cur-buy {
+  position: relative;
+  bottom: 76%;
+  left: 63%;
+}
+
+.about p {
+  padding-top: 25px;
+}
+/* About */
+
+/*Money Trans*/
+
+.money-transform {
+  margin-top: 50px;
+}
+
+.money-transform img {
+  margin-top: 20px;
+}
+
+.money-transform p {
+  padding-bottom: 20px;
+}
+
+.money-service-bg {
+  min-height: 700px;
+  background-image: url("./money-trans.png");
+}
+
+.money-service {
+  padding-top: 90px;
+}
+
+.money-service h2,
+.money-service p {
+  color: white;
+  font-weight: bold;
+}
+
+.money-service-desc {
+  padding-top: 15px;
+}
+
+.money-service-desc p {
+  width: 70%;
+}
+
+.currency-converter {
+  display: flex;
+  justify-content: center;
+}
+
+.currency-converter .dropdown {
+  padding-left: 13px;
+}
+
+.currency-converter .dropdown .btn-secondary {
+  color: #fff;
+  font-weight: bold;
+  background-color: #82828254;
+  border-color: #82828254;
+  border-radius: 0px;
+  width: 255px;
+}
+
+.input-currency-converter {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.input-currency-converter .form-control {
+  margin-left: 13px;
+  height: 105px;
+  background: #ffffff00;
+  border-color: white;
+  color: white;
+  border-radius: 0px;
+}
+
+.input-currency-converter .form-control::placeholder {
+  color: rgb(195, 195, 195);
+}
+
+.dropdown .btn-secondary {
+  color: #6c757d;
+  background-color: white;
+  border-color: black;
+  width: 100%;
+  border-radius: 0px;
+}
+
+/* Money Trans
+ */
+
+/* Services */
+.services h3 {
+  margin-top: 40px;
+}
+
+.services img {
+  padding-top: 30px;
+}
+/* Services */
+
+/*Footer*/
+.directions {
+  padding-top: 75px;
+}
+
+.directions h6 {
+  text-decoration: none;
+  color: #3d2013;
+}
+
+.get-dir {
+  margin-top: 0px;
+}
+
+.hr {
+  height: 2px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  background: rgb(218, 218, 218);
+}
+
+.footer-list ul li {
+  list-style: none;
+}
+
+footer .form-control {
+  height: 50px;
+}
+
+footer .input-group-text {
+  background: #017730;
+}
+
+footer .fa-envelope {
+  color: white;
+}
+
+footer .input-group {
+  padding-top: 20px;
+}
+
+.contacts h5 {
+  padding-bottom: 20px;
+  color: #3d2013;
+}
+
+/*Send money*/
+.send-money {
+  padding-top: 50px;
+}
+
+.send-money input {
+  border-color: #543333;
+  border-radius: 0px;
+}
+/*Send money*/
+
+/*Branches*/
+.branches {
+  padding-top: 50px;
+}
+
+.branch {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.branch img {
+  width: 229px;
+  height: 383px;
+}
+/*Brnaches*/
+
+/*Transform*/
+.trans-commision {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.trans-commision h2 {
+  padding-bottom: 20px;
+}
+
+.input-currency-transformer {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.input-currency-transformer .form-control {
+  margin-left: 13px;
+  height: 105px;
+  /*background: #ffffff00;*/
+  /*border-color: white;*/
+  color: white;
+  border-radius: 0px;
+  border-color: #543333;
+  border-radius: 0px;
+}
+
+.currency-dropdown input {
+  border-radius: 0px;
+  border-color: #543333;
+  border-radius: 0px;
+}
+/*Transform*/
+
+/*Jobs*/
+
+.jobs {
+  padding-top: 50px;
+}
+
+.jobs h3 {
+  padding-top: 20px;
+}
+
+.jobs p {
+  padding-top: 10px;
+  color: rgb(93, 93, 93);
+}
+
+.jobs-exists {
+  background: #3d2013;
+  min-height: 55px;
+  width: 30%;
+  margin-top: 30px;
+  padding: 7px;
+}
+
+.jobs-exists h5 {
+  color: white;
+  text-align: left;
+  position: relative;
+  top: 29%;
+  left: 10%;
+  font-weight: bold;
+}
+
+.input-jobs {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.input-jobs .form-control {
+  margin-left: 13px;
+  /*height: 105px;*/
+  /*background: #ffffff00;*/
+  /*border-color: white;*/
+  color: white;
+  border-radius: 0px;
+  border-color: #543333;
+  border-radius: 0px;
+}
+
+.send-cv {
+  padding-top: 50px;
+}
+
+.about-us {
+  padding-top: 50px;
+}
+.about-us h2 {
+  padding-bottom: 30px;
+}
+
+.about-us h4 {
+  padding-top: 30px;
+}
+
+.about-us p {
+  padding-top: 10px;
+  color: rgb(93, 93, 93);
+}
+
+.our-money-service {
+  padding-top: 65px;
+  margin-top: 75px;
+  min-height: 700px;
+  background-image: url("./m-ser.jpg");
+}
+
+.our-money-service p {
+  width: 50%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.our-money-service h2,
+.our-money-service h3,
+.our-money-service p {
+  color: white;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.anti-terrorism {
+  min-height: 380px;
+  background-color: #806d66;
+}
+
+.anti-terrorism-desc {
+  padding-top: 6%;
+  color: white;
+  font-weight: bold;
+}
+
+.anti-terrorism-desc p {
+  width: 75%;
+  margin: auto;
+  padding-top: 32px;
+}
+
+.navbar-toggler {
+  margin: auto;
+}
+
+@media (max-width: 767px) {
+  .header .description h2 {
+    font-size: 25px;
+  }
+
+  .buy-ribbon {
+    width: 100%;
+  }
+
+  .buy-ribbon h5 {
+    left: 0%;
+    text-align: center;
+  }
+
+  .e-payment-img {
+    height: 340px;
+    width: 316px;
+    object-fit: cover;
+  }
+
+  .currency-converter {
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .money-service h2,
+  .money-service-desc p {
+    color: black;
+  }
+
+  .money-service-bg {
+    background-attachment: fixed;
+  }
+}
